@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #2b1b0c;
+    font-family: sans-serif;
+}
+
+body {
+    padding: 8px;
+    width: 100vw;
+    height: 100vh;
+    gap: 8px;
+    background-color: #2b1b0c;
+    display: flex;
+
+
+    >section:first-child {
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        color: white;
+
+
+        >div {
+            background-color: #f9f7dc;
+            box-shadow: inset 0px 0px 48px #00000080;
+            border-radius: 16px;
+            height: 250px;
+            width: 250px;
+            overflow: hidden;
+            resize: both;
+            display: flex;
+            gap: 32px;
+            container-type: inline-size;
+            container-name: card;
+            background-color: #f9f7dc;
+
+
+
+
+            >div {
+                display: flex;
+                padding: 32px;
+                flex-direction: column;
+                gap: 32px;
+
+
+
+                >img {
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 8px;
+                }
+
+                >h2 {
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                >p {
+                    text-align: center;
+
+                }
+
+            }
+
+        }
+
+    }
+
+    >section:nth-child(2) {
+        display: flex;
+        padding: 16px;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+
+
+        >div {
+            height: 250px;
+            width: 250px;
+            overflow: hidden;
+            resize: both;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            border-radius: 16px;
+            container-type: inline-size;
+            container-name: card;
+            background-color: #f9f7dc;
+
+
+
+            >div {
+                box-shadow: inset 0px 0px 48px #00000080;
+                padding: 32px;
+                gap: 8px;
+                height: 100%;
+
+
+
+                >img {
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 8px;
+                }
+
+                >h2 {
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex: 1;
+                }
+
+                >p {
+                    text-align: center;
+
+                }
+
+                >img {
+
+                    object-fit: cover;
+                    flex: 1;
+                    border-radius: 8px;
+                }
+
+            }
+
+        }
+    }
+}
+
+
+@container card (min-width: 700px) {
+    section:nth-child(2)>div>div {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        >p {
+            display: none;
+        }
+
+        >h2 {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            align-items: center;
+            white-space: nowrap;
+            font-size: 42px;
+        }
+
+
+    }
+}
+
+
+@container card (min-width: 1020px) {
+    section:nth-child(2)>div>div {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 0 !important;
+        position: relative;
+
+        >p {
+            display: none;
+        }
+
+        >h2 {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            white-space: nowrap;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 120px;
+            color: rgba(73, 70, 70, 0.534);
+        }
+    }
+}
