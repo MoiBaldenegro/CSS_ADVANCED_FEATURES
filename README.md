@@ -1,6 +1,6 @@
 # Bienvenidos a nuestra colección de Demos CSS
 
-proximos: Writing-mode
+proximos: Writing-mode -  aspect-ratio - ancor-position - mixb blend mode - 
 
 Este repositorio es una colección de demostraciones de CSS que cubren características intermedias y avanzadas. Nuestro objetivo es proporcionar ejemplos claros y concisos que te ayuden a comprender y utilizar estas características en tus propios proyectos.
 
